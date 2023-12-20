@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "31104186-b0f5da4f-2c56-4289-a1d8-ad0b99fd7c8b",
+		"name": "Ingest-Test-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+    "item": [
+		{
+			"name": "Test Data Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"JobName\":\"Python Engineer\",\"Company\":\"east india securities ltd.\",\"JD\":\"Some job description\",\"Skills\":\"python,hadoop,machinelearning\",\"DatePosted\":\"Posted 5 days ago\",\"YOE\":\"2 - 5 yrs\",\"Location\":\"Kolkata\",\"Website\":\"www.eisec.com\",\"JobFunction\":\"IT Software : Software Products & Services\",\"Industry\":\"Petroleum/Oil and Gas/Power,  Construction/Cement/Metal/Steel/Iron\",\"Specialization\":\"Software Engineer\",\"Qualification\":\"Any Graduate\",\"HiringLocation\":\"Pune\",\"Role\":\"Intern, Fresher\",\"Vacancies\":5}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/jobinformation",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobinformation"
+					]
+				}
+			},
+			"response": []
+
+		}
+    ]
+
+}
